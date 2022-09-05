@@ -21,7 +21,7 @@
     "generate:css": "npx windicss './app/**/*.{jsx,tsx}' -to ./app/styles/windi.css -f windi.config.js",
     "start": "remix-serve build",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "format": "prettier --write ."
+    "format": "prettier './**/*.{js,ts,jsx,tsx,json,yml}' --write"
   },
   "commitlint": {
     "extends": [

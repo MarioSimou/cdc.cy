@@ -6,6 +6,6 @@ export default defineConfig({
   test: {
     globals: false,
     environment: 'happy-dom',
-    etupFiles: ['./test/setup-test-env.js']
-  }
+    etupFiles: ['./test/setup-test-env.js'],
+  },
 })
