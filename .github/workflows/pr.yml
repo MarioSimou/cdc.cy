@@ -1,0 +1,17 @@
+name: PR Pipeline
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  lint:
+    name: Check
+    uses: ./.github/workflows/lint.yml
+  units:
+    name: Check
+    uses: ./.github/workflows/unit.yml
+  typescript:
+    name: Check
+    uses: ./.github/workflows/typescript.yml
